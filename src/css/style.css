@@ -25,28 +25,28 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    #002ca3, 
-    black
+     #0036ca , 
+    #030a19 
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    black, 
-    black
+    #030a19 , 
+    #030a19 
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    #002ca3, 
-    black
+    #0036ca , 
+    #030a19 
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    #002ca3, 
-    #0b1941
+    #0036ca , 
+    #030a19 
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    #002ca3, 
-    #002ca3
+    #0036ca , 
+    #030a19 
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
@@ -56,11 +56,11 @@
 
   /* solid */
 
-  --jet: #002ca3;
-  --onyx: black;
+  --jet: #09287e;
+  --onyx:  #09287e ;
   --eerie-black-1: hsla(240, 3%, 13%, 0.322);
-  --eerie-black-2: black;
-  --smoky-black: black;
+  --eerie-black-2:  #030a19 ;
+  --smoky-black:  #030a19 ;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola:  	hsl(0, 0%, 100%);
@@ -169,7 +169,7 @@ body { background: var(--smoky-black); }
 article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
-  border-radius: 20px;
+  border-radius: 0;
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
