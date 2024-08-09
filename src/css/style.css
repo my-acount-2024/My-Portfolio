@@ -2,8 +2,8 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-     #0036ca , 
-    #030a19 
+    #0f0085 , 
+    #030a19
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
@@ -12,18 +12,18 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    #0036ca , 
-    #030a19 
+    #0f0085 , 
+    #030a19
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    #0036ca , 
-    #030a19 
+    #0f0085 , 
+    #030a19
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    #0036ca , 
-    #030a19 
+    #0f0085 , 
+    #030a19
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
@@ -33,14 +33,18 @@
 
   --onyx:  linear-gradient(
     to bottom right, 
-    #0036ca , 
-    #030a19 
+    #0f0085 , 
+    #030a19
   );
 
-  --jet: #0036ca;
+  --jet: linear-gradient(
+    to bottom right, 
+    #030a19 , 
+    #0f074f
+  );
   --eerie-black-1: hsla(240, 3%, 13%, 0.322);
   --eerie-black-2: #030a19 ;
-  --smoky-black:  #030a19 ;
+  --smoky-black:   radial-gradient(circle, #0036ca 0%, #030a19 100%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola:  	hsl(0, 0%, 100%);
@@ -150,9 +154,10 @@ article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
-  padding: 15px;
+  padding: 5px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  min-width: 330px;
 }
 
 .separator {
@@ -439,10 +444,10 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--jet);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  border-radius: 0 0 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
@@ -712,9 +717,6 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
   padding-bottom: 25px;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -729,7 +731,7 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  height: 75px;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -1454,9 +1456,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* clients */
 
   .clients-list {
-    gap: 50px;
     margin: 0 -30px;
-    padding: 45px;
+    padding: 25px;
     scroll-padding-inline: 45px;
   }
 
@@ -1840,7 +1841,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
+    --fs-7: 12px;
     font-weight: var(--fw-300);
   }
 
