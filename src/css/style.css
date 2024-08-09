@@ -1,27 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -54,12 +31,15 @@
     hsl(0, 0%, 98%)
   );
 
-  /* solid */
+  --onyx:  linear-gradient(
+    to bottom right, 
+    #0036ca , 
+    #030a19 
+  );
 
-  --jet: #09287e;
-  --onyx:  #09287e ;
+  --jet: #0036ca;
   --eerie-black-1: hsla(240, 3%, 13%, 0.322);
-  --eerie-black-2:  #030a19 ;
+  --eerie-black-2: #030a19 ;
   --smoky-black:  #030a19 ;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -169,7 +149,7 @@ body { background: var(--smoky-black); }
 article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
-  border-radius: 0;
+  border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
