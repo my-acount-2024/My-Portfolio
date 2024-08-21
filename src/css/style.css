@@ -715,14 +715,14 @@ main {
 
 .clients-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-bottom: 25px;
-  overflow-x: auto;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 15px;
+  overflow-x:hidden;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+  scroll-padding-inline: 15px;
 }
 
 .clients-item {
@@ -731,7 +731,7 @@ main {
 }
 
 .clients-item img {
-  height: 75px;
+  height: 50px;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
