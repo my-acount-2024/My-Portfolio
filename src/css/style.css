@@ -33,8 +33,8 @@
 
   --onyx:  linear-gradient(
     to bottom right, 
-    #0f0085 , 
-    #030a19
+    #0324ff , 
+    #040313
   );
 
   --jet: linear-gradient(
@@ -43,7 +43,7 @@
     #0f074f
   );
   --eerie-black-1: hsla(240, 3%, 13%, 0.322);
-  --eerie-black-2: #030a19 ;
+  --eerie-black-2: #040313 ;
   --smoky-black:   radial-gradient(circle, #0036ca 0%, #030a19 100%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
